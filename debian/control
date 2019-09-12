@@ -1,0 +1,15 @@
+Source: waybar
+Section: misc
+Priority: optional
+Maintainer: Mikael Knutsson <mikael.knutsson@gmail.com>
+Build-Depends: debhelper (>= 12), ninja-build, meson, scdoc, pkg-config, libinput10, libinput-dev, wayland-protocols, libwayland-client0, libwayland-cursor0, libwayland-dev, libegl1-mesa-dev, libgles2-mesa-dev, libgbm-dev, libxkbcommon-dev, libudev-dev, libpixman-1-dev, libjsoncpp-dev, libmpdclient-dev, libpulse-dev, libnl-3-dev, ca-certificates, libfmt-dev, clang-tidy, libnl-genl-3-dev, libspdlog-dev, cmake, git, libdbusmenu-gtk3-dev,libgtkmm-3.0-dev
+Standards-Version: 4.1.3
+Homepage: https://github.com/Alexays/Waybar
+#Vcs-Browser: https://salsa.debian.org/debian/mako
+#Vcs-Git: https://salsa.debian.org/debian/mako.git
+
+Package: waybar
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: Highly customizable Wayland bar for Sway and Wlroots based compositors.
+ Works with Sway
